@@ -1,0 +1,6 @@
+node_modules
+.vscode/*
+.env
+.code-workspace
+*.env
+*.code-workspace
