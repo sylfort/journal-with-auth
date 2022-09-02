@@ -4,4 +4,4 @@ node_modules
 .code-workspace
 *.env
 *.code-workspace
-DS_Store
+.DS_Store
