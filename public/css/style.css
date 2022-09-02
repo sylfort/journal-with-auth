@@ -1,10 +1,17 @@
-h1{
-    color: red;
+body {
+    background-color: dark yellow;
 }
-.completed{
+
+h1 {
+    color: dark green;
+}
+
+
+/* .read {
     text-decoration: line-through;
     color: gray;
 }
-.not{
+
+.not {
     text-decoration: underline;
-}
+} */
