@@ -4,3 +4,4 @@ node_modules
 *.code-workspace
 .code-workspace
 .DS_Store
+*.code-workspace
