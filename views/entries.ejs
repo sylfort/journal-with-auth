@@ -16,6 +16,10 @@
         <span><%= el.title %></span>
         <span><%= el.entry %></span>
         <span class="del"> Delete </span>
+        <span
+          ><%= moment(el.createdAt).format("dddd, MMMM Do YYYY, h:mm:ss a");
+          %></span
+        >
       </li>
       <% }) %>
     </ul>
