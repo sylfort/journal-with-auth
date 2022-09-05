@@ -1,17 +1,37 @@
 body {
-    background-color: dark yellow;
+    background-color: #09473a
 }
 
-h1 {
-    color: dark green;
+a {
+    color: rgb(255, 213, 0)
 }
 
-
-/* .read {
+.read {
     text-decoration: line-through;
     color: gray;
 }
 
 .not {
     text-decoration: underline;
-} */
+}
+
+.email {}
+
+
+/* .del {
+    color: red;
+}
+
+.title {
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: large;
+    text-decoration: solid underline black 4px;
+}
+
+.entry {
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.moment {} */

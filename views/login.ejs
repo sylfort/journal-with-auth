@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel='stylesheet' href='/css/style.css' />
+
 </head>
 
 <body>
@@ -25,9 +26,9 @@
                             <% }) %>
                                 <% } %>
                                     <form action="/login" method="POST">
-                                        <input type="email" name="email" placeholder="Email">
-                                        <input type="password" name="password" placeholder="Password">
-                                        <input type="submit">
+                                        <input class="email" type="email" name="email" placeholder="Email">
+                                        <input class="password" type="password" name="password" placeholder="Password">
+                                        <input class="submit" type="submit">
                                     </form>
 </body>
 
