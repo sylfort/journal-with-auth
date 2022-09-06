@@ -1,9 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #09473a
+    width: 75%;
+    margin: 20px;
+    background-color: #09473a;
 }
 
 a {
-    color: rgb(255, 213, 0)
+    color: goldenrod;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h3 {
+    color: rgb(58, 161, 175);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+p {
+    color: rgb(149, 149, 45);
+}
+
+.fa-solid .fa-user-plus {
+    color: rgb(149, 149, 45);
+}
+
+.createAccount {
+    color: rgb(149, 149, 45);
+}
+
+.titleForm {
+    text-align: center;
+    width: 75%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 15px;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.entryForm {
+    text-align: center;
+    width: 75%;
+    resize: both;
+    padding: 15px;
+    border-radius: 15px;
+    border: 0;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.06);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.submitBtn,
+.logoutBtn {
+    background: #28857d;
+    color: white;
+    padding: 15px;
+    border-style: outset;
+    border-color: #0066A2;
+    height: 50px;
+    width: 200px;
+    border-radius: 15px;
+    font: bold 15px 'Courier New';
+    text-shadow: none;
 }
 
 .read {
@@ -15,23 +79,25 @@ a {
     text-decoration: underline;
 }
 
-.email {}
-
-
-/* .del {
-    color: red;
-}
-
 .title {
+    font-color: white;
     font-weight: bold;
-    text-transform: capitalize;
     font-size: large;
-    text-decoration: solid underline black 4px;
-}
-
-.entry {
-    font-weight: bold;
+    text-decoration: solid underline black 2px;
     font-family: 'Courier New', Courier, monospace;
 }
 
-.moment {} */
+.entry {
+    font-family: 'Courier New', Courier, monospace;
+    font-color: white;
+    font-weight: bold;
+}
+
+.fa-trash {
+    color: red;
+}
+
+.moment {
+    font-size: 8px;
+    color: rgb(77, 77, 77);
+}
