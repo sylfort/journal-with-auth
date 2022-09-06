@@ -1,38 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Write your entry</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+    <link rel='stylesheet' href='/css/style.css' />
+    <script src="https://kit.fontawesome.com/60b932b601.js" crossorigin="anonymous"></script>
+</head>
 
-  <body>
-    <h1>Journal Entries</h1>
+<body>
+    <h1>
+        <%= user.userName%>'s journal</h1>
+    <h3>
+        <%= user.userName %>: has written
+            <%= total %> journal entries.</h3>
+    <form action="/entries/createEntry" method="POST">
+        <textarea class="titleForm" rows="2" cols="60" type="text" placeholder="entry title" name="titleItem"></textarea>
+        <textarea class="entryForm" rows="6" cols="60" type="text" placeholder="pour your heart out here" name="entryItem"></textarea>
+        <br>
+        <input class="submitBtn" onmouseover="this.style.cursor='pointer'" type="submit" value="submit" />
+    </form>
+
+    <form action="/logout" value="submit">
+        <button type="submit" class="submitBtn" onmouseover="this.style.cursor='pointer'">logout</button>
+    </form>
     <ul>
-      <% Entries.forEach( el => { %>
-      <li class="entryItem" data-id="<%=el._id%>">
-        <span><%= el.title %></span>
-        <span><%= el.entry %></span>
-        <span class="del"> Delete </span>
-        <span
-          ><%= moment(el.createdAt).format("dddd, MMMM Do YYYY, h:mm:ss a");
+        <% Entries.forEach( el => { %>
+            <li class="entryItem" data-id="<%=el._id%>">
+
+                <span class="title"><%= el.title%>:</span>
+                <span class="entry"><%= el.entry %></span>
+                <i class="fa-solid fa-trash" onmouseover="this.style.cursor='pointer'"></i>
+                <span class="moment"><%= moment(el.createdAt).format("dddd, MMMM Do YYYY, h:mm:ss a");
           %></span
         >
       </li>
       <% }) %>
     </ul>
 
-    <h2><%= user.userName %> has written <%= total %> journal entries.</h2>
 
-    <form action="/entries/createEntry" method="POST">
-      <input type="text" placeholder="Enter title " name="titleItem" />
-      <input type="text" placeholder="Enter journal text" name="entryItem" />
-      <input type="submit" />
-    </form>
 
-    <a href="/logout">Logout</a>
+ 
+
+    <!-- <a href="/logout">logout</a> -->
+    
 
     <script src="js/main.js"></script>
   </body>
