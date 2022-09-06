@@ -19,7 +19,7 @@
         "express-session": "^1.17.1",
         "moment": "^2.29.4",
         "mongodb": "^3.6.5",
-        "mongoose": "^5.12.3",
+        "mongoose": "^6.5.4",
         "morgan": "^1.10.0",
         "node.js": "^0.0.1-security",
         "nodemon": "^2.0.7",
