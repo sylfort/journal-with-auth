@@ -18,7 +18,7 @@
         "express-flash": "^0.0.2",
         "express-session": "^1.17.3",
         "moment": "^2.29.4",
-        "mongodb": "^3.6.5",
+        "mongodb": "^4.10.0",
         "mongoose": "^6.6.1",
         "morgan": "^1.10.0",
         "node.js": "^0.0.1-security",
